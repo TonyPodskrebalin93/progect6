@@ -16,4 +16,6 @@ async def user_page(user_id:int) -> dict:
 
 @app.get("/user")
 async def data_page(username: str, age: int) -> dict:
-    return {'Информация о пользователе. Имя' : username,
+    return {'Информация о пользователе. Имя' : username,  'Возраст': age}
+
+
